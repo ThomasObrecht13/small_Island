@@ -2,13 +2,13 @@ import java.util.List;
 
 public class Joueur
 {
-    private Carte carteObjectif;
+    private CarteObjectif carteObjectif;
     private int pointPrestige;
-    List<Carte> cartes ;
+    List<CarteObjectif> carteObjectifs;
 
-    public Carte piocheCarteObjectif()
+    public CarteObjectif piocheCarteObjectif()
     {
-        Carte carteObjectif = null;
+        CarteObjectif carteObjectif = null;
         // prendre la dernière carte de la pioche des cartes objectifs
         // La pioche sera une liste de type Dequeue comme comme ça on pourra renvoyer la dernière carte
 
