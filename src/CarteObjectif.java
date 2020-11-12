@@ -8,8 +8,8 @@ public class CarteObjectif {
     }
 
     public CarteObjectif(CarteMission mission, CarteRecompense recompense){
-        this.mission=new CarteMission(mission);
-        this.recompense= new CarteRecompense(recompense);
+        this.mission=mission;
+        this.recompense= recompense;
     }
 
     public CarteMission getMission(){
@@ -27,12 +27,16 @@ public class CarteObjectif {
         return result;
     }
 
-    public String litObjectif(){
+    public String LectureMission(){
         return mission.lectureMission();
     }
 
-    public String litRecompense(){
+    public String lectureRecompense(){
         return recompense.lectureRecompense();
+    }
+
+    public String lectureCarteObjectif(){
+        return "Objetif : "+mission.lectureMission()+"// Récompense : "+recompense.lectureRecompense();
     }
 
 }
