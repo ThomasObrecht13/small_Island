@@ -41,9 +41,8 @@ public class Fenetre extends JFrame{
 
     }
 
-    public void creerMenu() {
-
-
+    public void creerMenu()
+    {
         barMenu.add(newGame);
         setJMenuBar(barMenu);
         newGame.addActionListener(actionGame);

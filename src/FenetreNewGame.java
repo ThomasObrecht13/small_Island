@@ -20,7 +20,6 @@ public class FenetreNewGame extends JFrame {
         setSize(400,400);                    // Fixe la taille par défaut
         setVisible(true);                                // Affiche la fenetre
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);  // Gestion de la fermeture
-
     }
 
 
