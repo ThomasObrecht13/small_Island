@@ -1,4 +1,4 @@
-public class CarteRecompense {
+public class CarteRecompense extends Carte{
     public int[/*quel element*/][/*nombre de points de prestige*/] recompense;
 
     public CarteRecompense(){

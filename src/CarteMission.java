@@ -1,4 +1,4 @@
-public class CarteMission {
+public class CarteMission extends Carte{
     protected int[/*quel element*/][/*nombre d'element*/] mission;
 
     public CarteMission(){

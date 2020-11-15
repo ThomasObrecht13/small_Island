@@ -1,4 +1,4 @@
-public class CarteObjectif {
+public class CarteObjectif extends Carte{
     CarteMission mission;
     CarteRecompense recompense;
 
