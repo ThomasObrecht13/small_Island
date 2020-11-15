@@ -29,8 +29,6 @@ public class Fenetre extends JFrame{
         setSize(800,800);                    // Fixe la taille par défaut
         setVisible(true);                                // Affiche la fenetre
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);  // Gestion de la fermeture
-
-
     }
 
 

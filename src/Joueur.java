@@ -2,6 +2,7 @@ import java.util.List;
 
 public class Joueur
 {
+    private String nom;
     private CarteObjectif carteObjectif;
     private int pointPrestige;
     List<CarteObjectif> carteObjectifs;
@@ -13,6 +14,16 @@ public class Joueur
         // La pioche sera une liste de type Dequeue comme comme ça on pourra renvoyer la dernière carte
 
         return carteObjectif;
+    }
+
+    public String getNom()
+    {
+        return  nom;
+    }
+
+    public void setNom(String nom)
+    {
+        this.nom = nom;
     }
 
     public int getTotalPointPrestige()
