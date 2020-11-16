@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
 
@@ -35,7 +36,7 @@ public class Partie {
         Scanner scanner = new Scanner( System.in );
         System.out.print( "Veuillez saisir votre niveau de difficulté : " );
         String s = scanner.nextLine();
-        while(s=""){
+        while(s == ""){
             switch(s){
                 case "normal":
                     ArrayList<CarteObjectif> cartesObj = new ArrayList<CarteObjectif>();
