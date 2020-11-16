@@ -1,4 +1,4 @@
-public class CarteObjectif extends Carte{
+public class CarteObjectif {
     CarteMission mission;
     CarteRecompense recompense;
 
@@ -8,8 +8,8 @@ public class CarteObjectif extends Carte{
     }
 
     public CarteObjectif(CarteMission mission, CarteRecompense recompense){
-        this.mission=mission;
-        this.recompense= recompense;
+        this.mission=new CarteMission(mission);
+        this.recompense= new CarteRecompense(recompense);
     }
 
     public CarteMission getMission(){
@@ -27,16 +27,12 @@ public class CarteObjectif extends Carte{
         return result;
     }
 
-    public String LectureMission(){
-        return mission.lectureMission();
+    public String litObjectif(){
+        return mission.litMission();
     }
 
-    public String lectureRecompense(){
-        return recompense.lectureRecompense();
-    }
-
-    public String lectureCarteObjectif(){
-        return "Objetif : "+mission.lectureMission()+"// Récompense : "+recompense.lectureRecompense();
+    public String litRecompense(){
+        return recompense.litRecompense();
     }
 
 }

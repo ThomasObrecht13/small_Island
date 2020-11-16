@@ -60,4 +60,8 @@ public class CarteRecompense extends Carte{
         }
         return recompense;
     }
+
+
+    // récompense
+
 }

@@ -1,3 +1,4 @@
+import java.util.ArrayDeque;
 import java.util.List;
 
 public class Joueur
@@ -5,15 +6,12 @@ public class Joueur
     private String nom;
     private CarteObjectif carteObjectif;
     private int pointPrestige;
-    List<CarteObjectif> carteObjectifs;
+    ArrayDeque<CarteObjectif> pioche;
+
 
     public CarteObjectif piocheCarteObjectif()
     {
-        CarteObjectif carteObjectif = null;
-        // prendre la dernière carte de la pioche des cartes objectifs
-        // La pioche sera une liste de type Dequeue comme comme ça on pourra renvoyer la dernière carte
-
-        return carteObjectif;
+        return pioche.getFirst();
     }
 
     public String getNom()
