@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
 
@@ -35,10 +36,11 @@ public class Partie {
         Scanner scanner = new Scanner( System.in );
         System.out.print( "Veuillez saisir votre niveau de difficulté : " );
         String s = scanner.nextLine();
-        while(s=""){
+        boolean b ;
+        b = s.length() == 0;
+        while (b){
             switch(s){
                 case "normal":
-                    ArrayList<CarteObjectif> cartesObj = new ArrayList<CarteObjectif>();
                     CarteObjectif c1 = new CarteObjectif();
                     CarteObjectif c2 = new CarteObjectif();
                     CarteObjectif c3 = new CarteObjectif();
@@ -52,9 +54,9 @@ public class Partie {
                     CarteObjectif c11 = new CarteObjectif();
                     CarteObjectif c12 = new CarteObjectif();
                     //
-                    List<CarteMission> co = Arrays.asList(c1,c2,c3,c4,c5,c6,c7,c8,c9,c10,c11,c12);
+                    List<CarteObjectif> co =  Arrays.asList(c1,c2,c3,c4,c5,c6,c7,c8,c9,c10,c11,c12);
                     //
-                    cartesObj.addAll(co);
+                    ArrayList<CarteObjectif> cartesObj = new ArrayList<CarteObjectif>(co);
                     break;
 
                 case "avancé":
