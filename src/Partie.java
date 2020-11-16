@@ -36,9 +36,9 @@ public class Partie {
         Scanner scanner = new Scanner( System.in );
         System.out.print( "Veuillez saisir votre niveau de difficulté : " );
         String s = scanner.nextLine();
-        boolean b ;
-        b = s.length() == 0;
-        while (b){
+        boolean b = false;
+        if (s.length()==0) b=true;
+        while(b){
             switch(s){
                 case "normal":
                     CarteObjectif c1 = new CarteObjectif();
@@ -54,7 +54,7 @@ public class Partie {
                     CarteObjectif c11 = new CarteObjectif();
                     CarteObjectif c12 = new CarteObjectif();
                     //
-                    List<CarteObjectif> co =  Arrays.asList(c1,c2,c3,c4,c5,c6,c7,c8,c9,c10,c11,c12);
+                    List<CarteObjectif> co = Arrays.asList(c1,c2,c3,c4,c5,c6,c7,c8,c9,c10,c11,c12);
                     //
                     ArrayList<CarteObjectif> cartesObj = new ArrayList<CarteObjectif>(co);
                     break;
