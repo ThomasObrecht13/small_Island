@@ -27,12 +27,12 @@ public class CarteObjectif {
         return result;
     }
 
-    public String litObjectif(){
-        return mission.litMission();
+    public String lectureCarteObjectif(){
+        return mission.lectureMission();
     }
 
     public String litRecompense(){
-        return recompense.litRecompense();
+        return recompense.lectureRecompense();
     }
 
 }
