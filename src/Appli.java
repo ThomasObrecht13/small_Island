@@ -15,7 +15,6 @@ class Appli extends JFrame{
 
         });
 
-
     }
 
 }

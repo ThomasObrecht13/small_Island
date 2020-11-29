@@ -5,18 +5,21 @@ import java.util.List;
 public class Joueur
 {
     private String nom;
-    private CarteObjectif carteObjectif;
     private int pointPrestige;
-    ArrayDeque<CarteObjectif> pioche;
-    private ArrayList<Maison> handMaisons = new ArrayList<Maison>();
+    private ArrayDeque<CarteObjectif> pioche;
+    private ArrayList<Maison> handMaisons;
     private String couleurChoisie;
+    private ArrayList<TuilePaysage> handTuilesPaysages;
 
-
-
-    public CarteObjectif piocheCarteObjectif()
-    {
-        return pioche.getFirst();
+    public Joueur(String nom,String couleurChoisie){
+        this.nom=nom;
+        pointPrestige=0;
+        pioche = new ArrayDeque<CarteObjectif>();
+        handMaisons = new ArrayList<Maison>();
+        this.couleurChoisie=couleurChoisie;
+        handTuilesPaysages = new ArrayList<TuilePaysage>();
     }
+
 
     public String getNom()
     {
@@ -26,6 +29,15 @@ public class Joueur
     public void setNom(String nom)
     {
         this.nom = nom;
+    }
+
+    public void setCouleurChoisie(String couleurChoisie) {
+        this.couleurChoisie = couleurChoisie;
+    }
+
+    public CarteObjectif piocheCarteObjectif()
+    {
+        return pioche.getFirst();
     }
 
     public int getTotalPointPrestige()
@@ -69,7 +81,9 @@ public class Joueur
         }
     }
 
-    public void setCouleurChoisie(String couleurChoisie) {
-        this.couleurChoisie = couleurChoisie;
+    public void piocherTuilePaysage(Pioche pioche){
+        for(int i=0 ; i<2 ; i++) {
+            handTuilesPaysages.add(pioche.piocheUneTuilePaysage());
+        }
     }
 }
