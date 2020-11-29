@@ -2,23 +2,23 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Random;
 
-public class Pioche {
-    ArrayList<TuilePaysage> piocheTuilesPaysage;
+public class PiocheReserve {
+    ArrayList<TuilePaysage> piocheReserve;
 
-    public Pioche(){
-        piocheTuilesPaysage = new ArrayList<TuilePaysage>(56);
+    public PiocheReserve(){
+        piocheReserve = new ArrayList<TuilePaysage>(56);
     }
 
     public ArrayList<TuilePaysage> getPiocheTuilesPaysage(){
-        return piocheTuilesPaysage;
+        return piocheReserve;
     }
     public void setPiocheTuilesPaysage(ArrayList<TuilePaysage> test){
-        piocheTuilesPaysage=test;
+        piocheReserve=test;
     }
 
     // constituer la pioche des tuiles de paysages.
     public void  constitutionPioche(){
-        piocheTuilesPaysage = new ArrayList<>(56);
+        piocheReserve = new ArrayList<>(56);
         Random loto = new Random(Calendar.getInstance().getTimeInMillis());
         // mélange de la pioche
         TuilePaysage temp;
@@ -27,16 +27,16 @@ public class Pioche {
             t1 = loto.nextInt(56);
             t2 = loto.nextInt(56);
             if (t1 != t2){
-                temp = piocheTuilesPaysage.get(t1);
-                piocheTuilesPaysage.set(t1, piocheTuilesPaysage.get(t2));
-                piocheTuilesPaysage.set(t2,temp);
+                temp = piocheReserve.get(t1);
+                piocheReserve.set(t1, piocheReserve.get(t2));
+                piocheReserve.set(t2,temp);
             }
         }
     }
 
     public TuilePaysage piocheUneTuilePaysage(){
-        TuilePaysage retour = piocheTuilesPaysage.get(0);
-        piocheTuilesPaysage.remove(0);
+        TuilePaysage retour = piocheReserve.get(0);
+        piocheReserve.remove(0);
         return retour;
     }
 }

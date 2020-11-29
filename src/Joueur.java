@@ -81,7 +81,7 @@ public class Joueur
         }
     }
 
-    public void piocherTuilePaysage(Pioche pioche){
+    public void piocherTuilePaysage(PiocheReserve pioche){
         for(int i=0 ; i<2 ; i++) {
             handTuilesPaysages.add(pioche.piocheUneTuilePaysage());
         }
