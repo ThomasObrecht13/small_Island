@@ -10,7 +10,7 @@ class Appli extends JFrame{
         javax.swing.SwingUtilities.invokeLater( new Runnable() {
 
             public void run() {
-                Fenetre f = new Fenetre();
+                FenetreSquelette f = new FenetreSquelette();
             }
 
         });
