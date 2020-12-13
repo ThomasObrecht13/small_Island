@@ -91,8 +91,11 @@ public class Joueur
         }
     }
 
-    public void placerTuileBateau()
-    {
+    public TuileBateau getBateau() {
+        return bateau;
+    }
 
+    public void setBateau(TuileBateau bateau) {
+        this.bateau = bateau;
     }
 }

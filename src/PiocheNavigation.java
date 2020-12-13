@@ -12,4 +12,13 @@ public class PiocheNavigation {
             piocheNavigation.add(pioche.piocheUneTuilePaysage());
         }
     }
+
+    public void PlacementBateau()
+    {
+        if(piocheNavigation.isEmpty())
+        {
+
+        }
+    }
+
 }
