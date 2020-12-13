@@ -66,7 +66,7 @@ public class ControlBoutonMenu implements ActionListener {
 
         if(e.getSource() == fen.difficulty2)
         {
-            Fenetre fen = new Fenetre();
+            FenetreSquelette fen = new FenetreSquelette();
         }
     }
 }
