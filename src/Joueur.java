@@ -9,13 +9,17 @@ public class Joueur
     private ArrayDeque<CarteObjectif> pioche;
     private ArrayList<Maison> handMaisons;
     private String couleurChoisie;
+    private TuileBateau bateau;
     private ArrayList<TuilePaysage> handTuilesPaysages;
+
+    public Joueur() {}
 
     public Joueur(String nom,String couleurChoisie){
         this.nom=nom;
         pointPrestige=0;
         pioche = new ArrayDeque<CarteObjectif>();
         handMaisons = new ArrayList<Maison>();
+        bateau = new TuileBateau();
         this.couleurChoisie=couleurChoisie;
         handTuilesPaysages = new ArrayList<TuilePaysage>();
     }
@@ -85,5 +89,10 @@ public class Joueur
         for(int i=0 ; i<2 ; i++) {
             handTuilesPaysages.add(pioche.piocheUneTuilePaysage());
         }
+    }
+
+    public void placerTuileBateau()
+    {
+
     }
 }

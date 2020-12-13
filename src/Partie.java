@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class Partie {
 
     private int nbrJoueur;
-    //private int difficulte;
+    private int difficulte;
     private ArrayList<Joueur> joueurs = new ArrayList<Joueur>();
 
 
@@ -102,6 +102,11 @@ public class Partie {
             }
         }
     }
+
+    public void setDifficulte(int difficulte) {
+        this.difficulte = difficulte;
+    }
+
     public Joueur aGagner(){
         List<Joueur> joueurs;
         int max = Integer.MAX_VALUE;
