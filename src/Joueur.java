@@ -8,6 +8,7 @@ public class Joueur
     private int pointPrestige;
     private ArrayDeque<CarteObjectif> pioche;
     private ArrayList<Maison> handMaisons;
+    private ArrayList<Joker> handJoker;
     private String couleurChoisie;
     private TuileBateau bateau;
     private ArrayList<TuilePaysage> handTuilesPaysages;
@@ -78,6 +79,36 @@ public class Joueur
                 // couleur choisie par le joueur = mauve
                 for(int i = 0; i<4; i++){
                     handMaisons.add(new Maison("mauve"));
+                }
+                break;
+            default:
+                System.out.println("Couleur indisponible");
+        }
+    }
+    public void choixJoker(){
+        switch (couleurChoisie){
+            case "rouge":
+                // couleur choisie par le joueur = rouge
+                for(int i = 0; i<4; i++){
+                    handJoker.add(new Joker("rouge"));
+                }
+                break;
+            case "blanc":
+                // couleur choisie par le joueur = blanc
+                for(int i = 0; i<4; i++){
+                    handJoker.add(new Joker("blanc"));
+                }
+                break;
+            case "jaune":
+                // couleur choisie par le joueur = jaune
+                for(int i = 0; i<4; i++){
+                    handJoker.add(new Joker("jaune"));
+                }
+                break;
+            case "mauve":
+                // couleur choisie par le joueur = mauve
+                for(int i = 0; i<4; i++){
+                    handJoker.add(new Joker("mauve"));
                 }
                 break;
             default:

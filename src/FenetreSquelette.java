@@ -2,6 +2,10 @@ import javax.swing.*;
 import java.awt.*;
 
 public class FenetreSquelette extends JFrame {
+    JMenuBar barMenu;
+    JButton newGame;
+    ControleBouton actionGame;
+
     JPanel fenGlobal;
     JPanel pioche;
     JPanel plateau;
@@ -30,6 +34,7 @@ public class FenetreSquelette extends JFrame {
     public FenetreSquelette() {
         initAtribut();
         creerInterface();
+        creerMenu();
         creerBouton();
         pack();
         setSize(1400,700);                    // Fixe la taille par défaut
@@ -87,6 +92,9 @@ public class FenetreSquelette extends JFrame {
         BcarteJoueur = new JButton("afficher carte Joueur");
         BcarteJoueur.setPreferredSize(new Dimension(200,100));
 
+        barMenu = new JMenuBar();
+        newGame = new JButton("Nouvelle Partie");
+        actionGame = new ControleBouton(this);
     }
 
     public void creerInterface(){
@@ -139,5 +147,12 @@ public class FenetreSquelette extends JFrame {
         bateau.addActionListener();
         carteJoueur.addActionListener();
         */
+    }
+
+    public void creerMenu()
+    {
+        barMenu.add(newGame);
+        setJMenuBar(barMenu);
+        newGame.addActionListener(actionGame);
     }
 }
