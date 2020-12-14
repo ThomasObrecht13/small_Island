@@ -10,17 +10,18 @@ public class Partie {
     private ArrayList<Joueur> joueurs = new ArrayList<Joueur>();
 
 
-    public Partie(){
-
-
-
-    }
-
-
-    public void placement(){
+    public Partie(int nbr, int d)
+    {
+        this.nbrJoueur = nbr;
+        this.difficulte = d;
 
     }
 
+
+    public void placement()
+    {
+
+    }
 
     public void choix_joueur()
     {

@@ -129,4 +129,12 @@ public class Joueur
     public void setBateau(TuileBateau bateau) {
         this.bateau = bateau;
     }
+
+    public void placerBateau(TuileBateau bateau)
+    {
+        if(handTuilesPaysages.isEmpty())
+        {
+            bateau = new TuileBateau();
+        }
+    }
 }

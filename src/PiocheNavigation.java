@@ -13,12 +13,6 @@ public class PiocheNavigation {
         }
     }
 
-    public void PlacementBateau()
-    {
-        if(piocheNavigation.isEmpty())
-        {
 
-        }
-    }
 
 }
