@@ -56,6 +56,7 @@ public class FenetreNewGame extends JFrame {
 
         panelButton = new JPanel();
         panelButton.setAlignmentX(Component.CENTER_ALIGNMENT);
+        panelButton.setBackground(Color.CYAN);
         panelButton.add(button1);
         panelButton.add(button2);
         panelButton.add(button3);
@@ -75,6 +76,7 @@ public class FenetreNewGame extends JFrame {
 
         panJoueur = new JPanel();
         panJoueur.setAlignmentX(Component.CENTER_ALIGNMENT);
+        panJoueur.setBackground(Color.CYAN);
         panJoueur.add(joueur1);
         panJoueur.add(joueur2);
         panJoueur.add(joueur3);
@@ -89,6 +91,7 @@ public class FenetreNewGame extends JFrame {
         panDificulty.add(difficulty1);
         panDificulty.add(difficulty2);
         panDificulty.setAlignmentX(Component.CENTER_ALIGNMENT);
+        panDificulty.setBackground(Color.CYAN);
         panDificulty.setVisible(false);
 
         panFenetre = new JPanel();
@@ -117,6 +120,7 @@ public class FenetreNewGame extends JFrame {
         // ce panel va contenir tout les autres panel visible ou invisible selon leurs états
         panFenetre = new JPanel();
         panFenetre.setLayout(new BoxLayout(panFenetre, BoxLayout.Y_AXIS));
+        panFenetre.setBackground(Color.CYAN);
 
         panFenetre.add(panelButton);
         panFenetre.add(panJoueur);
